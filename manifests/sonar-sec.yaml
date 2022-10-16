@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: sonarqube-tif-sec
+  namespace: sonarqube
+type: Opaque
+data:
+  SONARQUBE_JDBC_USERNAME: *******************
+  SONARQUBE_JDBC_PASSWORD: *******************
+  SONARQUBE_JDBC_URL: *******************
+

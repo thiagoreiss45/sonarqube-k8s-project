@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: sonarqube-tif
+  name: sonarqube-svc
+  namespace: sonarqube
+spec:
+  ports:
+    - port: 80
+      protocol: TCP
+      targetPort: 9000
+  selector:
+    app: sonarqube-tif
+  type: LoadBalancer
